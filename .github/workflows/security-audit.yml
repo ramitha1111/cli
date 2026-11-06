@@ -12,6 +12,7 @@ jobs:
   security-scan:
     name: Security Audit
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     strategy:
       fail-fast: false # Continue all jobs even if one fails
       matrix:
